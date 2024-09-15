@@ -1,0 +1,62 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#FFFFFF;
+	--color-background:#F78F1E;
+	--color-text-artist:#000000;
+
+	--font-face: 'Helvetica';
+	--font-size-xl: 6em;
+	--font-size-mid: 1.125em;
+	
+
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-background);
+	font-family: var(--font-face);
+}
+
+Header {
+display: flex;
+}
+
+h1 {
+font-size: var(--font-size-xl);
+letter-spacing: -0.06em;
+margin-top: 0.1em;
+margin-bottom: 0.1em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+	font-size: var(--font-size-mid)
+}
+
+main a {
+	text-decoration: underline;
+}
