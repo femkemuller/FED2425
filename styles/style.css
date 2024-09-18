@@ -13,12 +13,15 @@
 /*********************/
 :root {
 	/* startje */
+	color-scheme: light dark;
+
 	--color-text: #FFFFFF;
 	--color-text-clear: #ffffff84;
-	--color-background: #F78F1E;
+	--color-background: light-dark(#F78F1E, #000000);
 	--color-text-artist: #000000;
-	--color-button-active: #E35800;
-	--color-button-inactive: #EF7A13;
+	--color-button-active: light-dark(#E35800, #585858);
+	--color-button-inactive: light-dark(#EF7A13, #2e2e2e);
+	--color-button-focus: light-dark(#ffffff, #F78F1E);
 
 	--font-face: 'Helvetica';
 	--font-size-xl: 6em;
@@ -29,8 +32,13 @@
 	--letter-spacing: -0.06em;
 }
 
+:root:has(value="light"):checked {
+	color-scheme: light;
+}
 
-
+:root:has(value="dark"):checked {
+	color-scheme: dark;
+}
 
 
 /****************/
@@ -91,7 +99,7 @@ main a {
 
 .artiest {
 	color: var(--color-text-artist);
-background-color: var(--color-text);
+	background-color: var(--color-text);
 
 
 }
@@ -124,6 +132,17 @@ button {
 	padding-left: 0.7em;
 	padding-right: 0.7em;
 	margin: 2px;
+}
+
+button:hover {
+	background-color: var(--color-button-active);
+	transition: 0.2s;
+}
+
+button:focus-visible {
+	border: var(--color-button-focus);
+	border-style: dashed;
+	border-radius: 0;
 }
 
 ul li:first-child button {
