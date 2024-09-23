@@ -47,6 +47,11 @@
 
 /* jouw code */
 
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	color: var(--color-text);
 	background-color: var(--color-background);
@@ -73,17 +78,22 @@ h1 {
 h2 {
 	display: flex;
 	justify-content: flex-start;
+
 	font-size: var(--font-size-l);
 	letter-spacing: var(--letter-spacing);
-	margin: 0;
+
+	margin-left: 0.15em;
+	margin-bottom: 0.5em;
 }
 
 h3 {
 	display: flex;
 	justify-content: flex-start;
 
-	font-size: var(--font-size-m);
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
 
+	font-size: var(--font-size-m);
 }
 
 a {
@@ -103,12 +113,12 @@ ul li a {
 	text-decoration: none;
 }
 
-.artiest {
-	color: var(--color-text-artist);
-	background-color: var(--color-text);
 
 
+nav {
+	padding: 0.7em;
 }
+
 
 section:first-of-type p {
 	display: flex;
@@ -124,7 +134,6 @@ ul {
 	display: flex;
 	align-items: flex-start;
 	list-style: none;
-	padding: 0;
 }
 
 section ul:nth-last-of-type(3) {
@@ -133,6 +142,12 @@ section ul:nth-last-of-type(3) {
 
 section ul:nth-last-of-type(3) li {
 	margin: 0.5em;
+}
+
+section>ul:first-of-type {
+	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 
@@ -165,62 +180,76 @@ ul li:first-child button {
 	background-color: var(--color-button-active);
 }
 
-.slider {
+main>ul:first-of-type {
 	display: flex;
 	overflow: scroll;
 	overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
 }
 
-.card {
-    display: flex;
-    position: relative;
-    flex-shrink: 0;
-    width: 80%;
-    padding-left: 16px;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    aspect-ratio: 5 / 6;
+main>ul:first-of-type li {
+	display: flex;
+	position: relative;
+	flex-shrink: 0;
+	width: 80%;
+	padding-left: 16px;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	aspect-ratio: 5 / 6;
 }
 
-/* 	position: relative;
-	width: 325px;
-	overflow: hidden;
-	margin: 0.5em; */
-
-.card img {
+main>ul:first-of-type li img {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-		box-shadow: 10px 10px 5px lightblue inset;
+	box-shadow: 10px 10px 5px lightblue inset;
 }
 
 /* https://codepen.io/tristram/pen/poZYjLO */
-.card:hover img {
+main>ul:first-of-type li:hover img {
 	transform: scale(1.1);
 	transition: .8s ease;
 }
 
-.card p {
+main>ul:first-of-type li p {
 	position: absolute;
 	left: 1em;
 
 }
 
-.card p:nth-of-type(1) {
+main>ul:first-of-type li p:nth-of-type(1) {
 	bottom: 45px;
 }
 
-.card p:nth-of-type(2) {
+main>ul:first-of-type li p:nth-of-type(2) {
 	bottom: 23px;
 }
 
-.card p:nth-of-type(3) {
+main>ul:first-of-type li p:nth-of-type(3) {
 	bottom: 1px;
 }
 
-.card a {
+main>ul:first-of-type li a {
 	margin-inline-start: 0;
 	font-size: 1.3em;
+}
+
+.artiest {
+	color: var(--color-text-artist);
+	background-color: var(--color-text);
+
+	section {
+		position: relative;
+	}
+
+	section>img {
+		width: 100%;
+	}
+
+	h3 {
+		color: var(--color-text);
+		position: absolute;
+		bottom: 3em;
+	}
 }
