@@ -26,6 +26,7 @@
 	--font-face: 'Helvetica';
 	--font-size-xl: 6em;
 	--font-size-l: 4.4em;
+	--font-size-ml: 1.3em;
 	--font-size-mid: 1.125em;
 	--font-size-m: 1.8em;
 	--font-size-s: 0.9em;
@@ -232,7 +233,7 @@ main>ul:first-of-type li p:nth-of-type(3) {
 
 main>ul:first-of-type li a {
 	margin-inline-start: 0;
-	font-size: 1.3em;
+	font-size: var(--font-size-ml);
 }
 
 .artiest {
@@ -247,9 +248,70 @@ main>ul:first-of-type li a {
 		width: 100%;
 	}
 
+	section:nth-of-type(2) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	section:nth-of-type(2) p {
+		margin-bottom: 1.6em;
+	}
+
+	section:nth-of-type(2) p:first-of-type {
+		font-weight: bold;
+	}
+
+	section:nth-of-type(3) {
+		display: flex;
+		flex-direction: column;
+
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+ 
+	footer {
+		font-size: 0.8em;
+		font-weight: bold;
+		color: #0f63ff;
+		margin-top: 1.6em;
+		margin-bottom: 1.6em;
+	}
+
+	button {
+		background-color: var(--color-background);
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		bottom: -1em;
+		left: 1em;
+		right: 1em;
+		margin: 0em;
+		padding: 0.9em;
+
+	}
+
+	button:hover {
+		background-color: var(--color-button-active);
+	}
+
+	button p {
+		padding-top: 0.3em;
+		font-size: var(--font-size-ml);
+		color: var(--color-text);
+	}
+
 	h3 {
 		color: var(--color-text);
 		position: absolute;
-		bottom: 3em;
+		bottom: 1.4em;
+		margin-left: 0.4em;
 	}
+
+	iframe {
+		justify-content: center;
+		max-width: 70%;
+		height: auto;
+	}
+
+
 }
