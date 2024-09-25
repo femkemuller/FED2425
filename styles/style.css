@@ -52,12 +52,15 @@
 * {
 	padding: 0;
 	margin: 0;
+	max-width: 500px;
 }
 
 body {
 	color: var(--color-text);
 	background-color: var(--color-background);
+
 	font-family: var(--font-face);
+
 	cursor: url(../images/pardiso_customcursor_paradiso_cursor_zwartwit.svg), auto;
 }
 
@@ -291,7 +294,7 @@ section:nth-of-type(2) img {
 		max-width: 100%;
 		margin-top: 0;
 		margin-bottom: 0;
-	
+
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -352,10 +355,9 @@ section:nth-of-type(2) img {
 		text-shadow: var(--text-shadow);
 	}
 
-	iframe {
-		width: 70%;
-		height: auto;
+	h2 {
+		font-size: var(--font-size-m);
+		margin-left: 0;
 	}
-
 
 }
