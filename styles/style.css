@@ -120,6 +120,10 @@ nav {
 	padding: 0.7em;
 }
 
+nav a {
+	padding: 0.8em;
+}
+
 section:first-of-type p {
 	display: flex;
 	justify-content: center;
@@ -136,13 +140,31 @@ ul {
 	list-style: none;
 }
 
+section ul:nth-last-of-type(1) {
+	flex-direction: column;
+	margin-bottom: 3em;
+}
+
+section ul:nth-last-of-type(2) {
+	flex-direction: column;
+}
+
 section ul:nth-last-of-type(3) {
 	flex-direction: column;
+}
+
+section ul:nth-last-of-type(1) li {
+	margin: 0.5em;
+}
+
+section ul:nth-last-of-type(2) li {
+	margin: 0.5em;
 }
 
 section ul:nth-last-of-type(3) li {
 	margin: 0.5em;
 }
+
 
 section>ul:first-of-type {
 	justify-content: center;
@@ -202,7 +224,6 @@ main>ul:first-of-type li img {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	box-shadow: 10px 10px 5px lightblue inset;
 }
 
 /* https://codepen.io/tristram/pen/poZYjLO */
@@ -236,7 +257,7 @@ main>ul:first-of-type li a {
 	font-size: var(--font-size-ml);
 }
 
-.carousel {
+section:nth-of-type(2) {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 100%;
@@ -246,7 +267,7 @@ main>ul:first-of-type li a {
 
 }
 
-.carousel img {
+section:nth-of-type(2) img {
 	max-width: 30%;
 	max-height: auto;
 	margin: 0.3em;
@@ -265,6 +286,12 @@ main>ul:first-of-type li a {
 	}
 
 	section:nth-of-type(2) {
+		display: block;
+		flex-wrap: nowrap;
+		max-width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -288,7 +315,7 @@ main>ul:first-of-type li a {
 	footer {
 		font-size: 0.8em;
 		font-weight: bold;
-		color: #0f63ff;
+		color: #E35800;
 		margin-top: 1.6em;
 		margin-bottom: 1.6em;
 	}
