@@ -143,31 +143,64 @@ ul {
 	list-style: none;
 }
 
-section ul:nth-last-of-type(1) {
+section ul:nth-of-type(2) {
 	flex-direction: column;
 	margin-bottom: 3em;
 }
 
-section ul:nth-last-of-type(2) {
+section ul:nth-of-type(3) {
 	flex-direction: column;
+	margin-bottom: 3em;
 }
 
-section ul:nth-last-of-type(3) {
+section ul:nth-of-type(4) {
 	flex-direction: column;
+	margin-bottom: 3em;
 }
 
-section ul:nth-last-of-type(1) li {
+section ul:nth-of-type(2) li {
 	margin: 0.5em;
 }
 
-section ul:nth-last-of-type(2) li {
+section ul:nth-of-type(3) li {
 	margin: 0.5em;
 }
 
-section ul:nth-last-of-type(3) li {
+section ul:nth-of-type(4) li {
 	margin: 0.5em;
 }
 
+section ul:nth-of-type(2) li:nth-of-type(2){
+	margin: 0.5em;
+	padding-bottom: 1em;
+	border-color: var(--color-button-inactive);
+	border: 1px;
+	border-left: var(--color-background);
+	border-right: var(--color-background);
+	border-style: solid;
+}
+
+
+section ul:nth-of-type(3) li:nth-of-type(2){
+	margin: 0.5em;
+	padding-bottom: 1em;
+	border-color: var(--color-button-inactive);
+	border: 1px;
+	border-left: var(--color-background);
+	border-right: var(--color-background);
+	border-style: solid;
+}
+
+section ul:nth-of-type(4) li:nth-of-type(2){
+	margin: 0.5em;
+	padding-bottom: 1em;
+	border-color: var(--color-button-inactive);
+	border: 1px;
+	border-left: var(--color-background);
+	border-right: var(--color-background);
+	border-style: solid;
+
+}
 
 section>ul:first-of-type {
 	justify-content: center;
