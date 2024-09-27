@@ -57,12 +57,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  veel afbeeldingen hadden geen naam.
-  veel linkjes begonnen met banger banger.
-  vertelt welke kleur de tekst en het logo is.
-  Vertelt dat er een bericht binnen komt.
-  leest de alinea's niet, alleen de headers.
-  Laat weten wanneer de pagina klaar is met laden.
+  . veel afbeeldingen hadden geen naam.
+  . veel linkjes werden opgenoemt als 'banger banger'.
+  . er word vertelt welke kleur de tekst en het logo is.
+  . Vertelt dat er een bericht binnen komt.
+  . leest de alinea's niet, alleen de headers.
+  . Laat weten wanneer de pagina klaar is met laden.
 </details>
 
 
@@ -234,7 +234,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. [bron 1](https://codepen.io/tristram/pen/poZYjLO)
   2. bron 2
   3. ...
 

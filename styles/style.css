@@ -12,7 +12,6 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	color-scheme: light dark;
 
 	--color-text: #FFFFFF;
@@ -47,7 +46,6 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
 * {
 	padding: 0;
@@ -64,22 +62,45 @@ body {
 	cursor: url(../images/pardiso_customcursor_paradiso_cursor_zwartwit.svg), auto;
 }
 
+
+/**************/
+/* NAVIGATION */
+/**************/
+
+
 Header {
 	color: var(--color-text);
 	background-color: var(--color-background);
 }
 
 nav {
-	padding: 0.7em;
+	padding: 0.8em;
+
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 }
 
-nav a {
-	padding: 0.8em;
-	padding-left: 0;
+nav a:first-of-type,
+nav a:nth-of-type(2) {
+	flex-shrink: 1;
+	padding: 0.7em;
 }
+
+nav a:first-of-type {
+	padding-left: 0.2em;
+}
+
+nav a:nth-of-type(3) {
+	flex-grow: 1;
+	text-align: end;
+
+	padding-right: 0.1em;
+}
+
+
+/********/
+/* MAIN */
+/*******/
 
 
 h1 {
@@ -143,7 +164,7 @@ ul {
 ul li a {
 	text-decoration: none;
 }
- 
+
 section:first-of-type p {
 	display: flex;
 	justify-content: center;
@@ -206,7 +227,7 @@ main>ul:first-of-type li img {
 	overflow: hidden;
 }
 
-/* https://codepen.io/tristram/pen/poZYjLO */
+/* bron:https://codepen.io/tristram/pen/poZYjLO */
 main>ul:first-of-type li:hover img {
 	transform: scale(1.1);
 	transition: .8s ease;
