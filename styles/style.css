@@ -93,7 +93,7 @@ nav a:first-of-type {
 nav a:nth-of-type(3) {
 	flex-grow: 1;
 	text-align: end;
-
+	font-weight: bold;
 	padding-right: 0.1em;
 }
 
