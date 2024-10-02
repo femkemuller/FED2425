@@ -23,6 +23,7 @@
 	--color-button-active: light-dark(#007F6D, #585858);
 	--color-button-inactive: light-dark(#009983, #2e2e2e);
 	--color-button-focus: #F78F1E;
+	--color-box-shadow: light-dark(#00352d, #ffffff);
 
 	--letter-spacing: -0.06em;
 	--text-shadow: 0px 0px 6px #000000;
@@ -174,11 +175,9 @@ nav:nth-of-type(2) a:hover {
 	text-decoration: underline;
 }
 
-/* als menu open is */
 nav.toonMenu {
 	translate: 0% 0%;
 	z-index: 1000;
-
 }
 
 /********/
@@ -280,16 +279,16 @@ section:nth-of-type(2) img {
 }
 
 
-/**************/
-/* ANIMATION */
-/*************/
+/**********************/
+/* ANIMATION CIRCLES */
+/*********************/
 
 
 .container {
 	position: relative;
 }
 
-.ball {
+.cirkel {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -303,7 +302,7 @@ section:nth-of-type(2) img {
 	animation: moving infinite linear alternate 18s;
 }
 
-.ball2 {
+.cirkel2 {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -316,7 +315,7 @@ section:nth-of-type(2) img {
 	animation: moving2 infinite linear alternate 20s;
 }
 
-.ball3 {
+.cirkel3 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -485,8 +484,8 @@ main>ul:first-of-type li img {
 
 /* bron:https://codepen.io/tristram/pen/poZYjLO */
 main>ul:first-of-type li:hover img {
-	transform: scale(1.1);
-	transition: .8s ease;
+box-shadow: 0px 0px 20px var(--color-button-inactive);
+	transition: .6s ease;
 }
 
 main>ul:first-of-type li p {
@@ -725,10 +724,20 @@ section ul:nth-of-type(4) a p {
 	}
 
 	section:nth-of-type(2) p:first-of-type {
+		font-size: 0.8em;
+		font-weight: bold;
+
+		color: #E35800;
+
+		margin-top: 1.6em;
+		margin-bottom: 1.6em;
+	}
+
+	section:nth-of-type(2) p:nth-of-type(2) {
 		font-weight: bold;
 	}
 
-	section:nth-of-type(2) p:nth-of-type(4) {
+	section:nth-of-type(2) p:nth-of-type(5) {
 		font-weight: bold;
 	}
 
@@ -742,16 +751,6 @@ section ul:nth-of-type(4) a p {
 
 	section:nth-of-type(3) p:first-of-type {
 		font-weight: bold;
-	}
-
-	h4 {
-		font-size: 0.8em;
-		font-weight: bold;
-
-		color: #E35800;
-
-		margin-top: 1.6em;
-		margin-bottom: 1.6em;
 	}
 
 	main button {
