@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
   #### Screenshot(s) van de eerste pagina (small screen): 
   Paradiso homepagina 
-  <img src="readme-images/paradiso_homepage.jpg" width="375px" alt="Homepagina van Paradiso">
+  <img src="readme-images/paradiso_homepage1.jpg" width="375px" alt="Homepagina van Paradiso">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Paradiso artiest pagina 
-  <img src="readme-images/paradiso_artistpage.png" width="375px" alt="Pagina over Artiest en Concert van Paradiso">
+  <img src="readme-images/paradiso_artistpage1.png" width="375px" alt="Pagina over Artiest en Concert van Paradiso">
  
 </details>
 
@@ -73,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown_schets_paradiso.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_paradiso.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/paradiso_menu.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -183,13 +183,15 @@ Ik heb nog moeite om de 2e pagina te stylen.
   Het bouwen van de website ging me makkelijker af dan ik had verwacht.
    Tijdens dit proces heb ik enorm veel nieuwe dingen geleerd. Zo heb ik onder andere geleerd hoe ik effectief met flex grow en shrink kan werken. Daarnaast heb ik ervaring opgedaan met het implementeren van een dark mode, het maken van een image slider, en het werkend krijgen van een hamburgermenu met JavaScript. Ook heb ik gecompliceerde animaties toegevoegd en veel gewerkt aan de positionering van elementen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/imageslider.png" width="375px" alt="image slider">
+  
+  <img src="readme-images/imageslider2.png" width="375px" alt="image slider">
 
 
   ### Dit was lastig/Is niet gelukt:
  Het positioneren van de tekst in mijn event list vond ik lastig en ik had veel hulp nodig om het goed te krijgen. Ook heb ik veel tijd besteed aan het JavaScript hamburgermenu, omdat de code van het voorbeeld erg afweek van de code die ik al had. Uiteindelijk is alles wat ik wilde doen gelukt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/eventlist.png" width="375px" alt="Event list">
 </details>
 
 
