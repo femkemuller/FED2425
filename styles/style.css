@@ -10,11 +10,9 @@
 
 
 /*********************/
-/* CUSTOM PROPERTIES
-#F78F1E
-#E35800
-#EF7A13 */
+/* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	color-scheme: light dark;
 
@@ -32,6 +30,7 @@
 	--font-face: 'Helvetica';
 	--font-size-xl: 6em;
 	--font-size-l: 4.4em;
+	--font-size-menu: 2.7em;
 	--font-size-m: 1.8em;
 	--font-size-ml: 1.3em;
 	--font-size-mid: 1.125em;
@@ -56,7 +55,7 @@
 
 
 /****************/
-/* JOUW STYLING */
+/*   STYLING   */
 /****************/
 
 
@@ -76,9 +75,9 @@ body {
 }
 
 
-/**************/
-/* NAVIGATION */
-/**************/
+/*********************/
+/* HEADER NAVIGATION */
+/*********************/
 
 
 Header {
@@ -88,7 +87,6 @@ Header {
 
 nav {
 	padding: 0.8em;
-
 	display: flex;
 	align-items: center;
 }
@@ -106,12 +104,10 @@ nav button:hover {
 	background-color: var(--color-background);
 }
 
-
 nav a:nth-of-type(1) {
 	flex-shrink: 1;
 	padding: 0.7em;
 }
-
 
 nav a:nth-of-type(2) {
 	flex-grow: 1;
@@ -120,6 +116,70 @@ nav a:nth-of-type(2) {
 	padding-right: 0.1em;
 }
 
+
+/**************/
+/*   MENU JS  */
+/**************/
+
+/* CodePen Home
+FED 24/25 - JS 3-stap - Oefening 2 - responsive 2-buttons hamburger
+Bron: https://codepen.io/shooft/pen/VwJXNEg?editors=1100*/
+
+
+nav:nth-of-type(2) button {
+	order: -1;
+	justify-self: start;
+	background-color: #FFFFFF;
+	color: #000;
+}
+
+nav:nth-of-type(2) {
+	padding: 1em;
+
+	display: grid;
+	align-content: start;
+	gap: 1em;
+
+	background-color: #FFFFFF;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	translate: -100% 0%;
+	transition: translate .3s;
+	z-index: 1000;
+}
+
+nav:nth-of-type(2) ul {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+nav:nth-of-type(2) li {
+	margin-bottom: 0.5em;
+}
+
+nav:nth-of-type(2) a {
+	color: var(--color-text-artist);
+	font-size: var(--font-size-menu);
+	font-weight: bold;
+	padding: 0;
+}
+
+nav:nth-of-type(2) a:hover {
+	text-decoration: underline;
+}
+
+/* als menu open is */
+nav.toonMenu {
+	translate: 0% 0%;
+	z-index: 1000;
+
+}
 
 /********/
 /* MAIN */
@@ -791,59 +851,4 @@ section ul:nth-of-type(4) a p {
 	}
 
 
-}
-
-
-
-
-
-
-
-
-/* --- Hamburger menu styling --- */
-.hamburger-menu {
-	position: relative;
-	z-index: 1000;
-	/* Z-index van 1000 om ervoor te zorgen dat het menu bovenaan komt */
-}
-
-.menu-dropdown {
-	display: none;
-	/* Verberg het dropdownmenu standaard */
-	position: absolute;
-	top: 50px;
-	/* Afstand vanaf de knop */
-
-
-	left: 0;
-	background-color: rgb(255, 255, 255);
-	padding: 1em;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-	z-index: 1001;
-	/* Hoger dan de rest van de pagina */
-}
-
-.menu-dropdown ul {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	margin: 0;
-	padding: 2em;
-}
-
-.menu-dropdown ul li {
-	margin: 0.5em 0;
-}
-
-.menu-dropdown ul li a {
-	color: var(--color-text-artist);
-	text-decoration: none;
-	font-size: var(--font-size-l);
-	font-weight: bold;
-}
-
-nav button:hover,
-.menu-dropdown ul li a:hover {
-	text-decoration: underline var(--color-text-artist);
-	transition: 0.3s;
 }
