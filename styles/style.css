@@ -93,10 +93,12 @@ nav {
 }
 
 nav button {
-	flex-shrink: 1;
+	background-color: var(--color-background);
+
 	padding: 0.7em;
 	margin: 0;
-	background-color: var(--color-background);
+
+	flex-shrink: 1;
 	padding-left: 0.3em;
 	justify-self: start;
 }
@@ -150,15 +152,24 @@ nav:nth-of-type(2) {
 nav:nth-of-type(2) button {
 	order: -1;
 	justify-self: start;
-	background-color: #FFFFFF;
+
 	padding: 0.3em;
 	padding-top: 0.4em;
+
+	background-color: #FFFFFF;
 	border: dotted 2px #ffffff;
 }
 
 nav:nth-of-type(2) button:hover {
-border: dotted 2px #000000;
-border-radius: 50%;
+	border: dotted 2px #000000;
+	border-radius: 50%;
+}
+
+nav:nth-of-type(2) button:focus-visible {
+	border: 6px;
+	border-style: dotted;
+	border-color: var(--color-button-focus);
+	border-radius: 0;
 }
 
 nav:nth-of-type(2) ul {
@@ -199,6 +210,21 @@ h1 {
 
 	margin-top: 0.1em;
 	margin-bottom: 0;
+
+	animation: ParadisoZoom 2s ease-in-out;
+}
+
+@keyframes ParadisoZoom {
+	0% {
+		transform: scale(0);
+		opacity: 0.2;
+	}
+
+	100% {
+
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 h2 {
@@ -263,23 +289,23 @@ section:first-of-type p {
 	font-weight: bold;
 }
 
-
 /*****************/
 /* IMAGE COLLAGE */
 /*****************/
 
 
-div section:nth-of-type(2) {
+div div:nth-of-type(4) {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 100%;
 	justify-content: center;
+
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
 
-section:nth-of-type(2) img {
+div:nth-of-type(4) img {
 	max-width: 30%;
 	max-height: auto;
 	margin: 0.3em;
@@ -476,8 +502,10 @@ main>ul:first-of-type li {
 	display: flex;
 	position: relative;
 	flex-shrink: 0;
+
 	width: 80%;
 	padding-left: 16px;
+
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 	aspect-ratio: 5 / 6;
@@ -489,20 +517,19 @@ main>ul:first-of-type li img {
 	overflow: hidden;
 }
 
-/* bron:https://codepen.io/tristram/pen/poZYjLO */
 main>ul:first-of-type li:hover img {
-box-shadow: 0px 0px 20px var(--color-button-inactive);
+	box-shadow: 0px 0px 20px var(--color-box-shadow);
 	transition: .6s ease;
 }
 
 main>ul:first-of-type li p {
 	position: absolute;
 	left: 1.5em;
-	background-color: #00000012;
 	width: 85%;
+
+	background-color: #00000012;
 	backdrop-filter: blur(6px);
 }
-
 
 main>ul:first-of-type li p:nth-of-type(1) {
 	bottom: 58px;
@@ -524,7 +551,6 @@ main>ul:first-of-type li a {
 	font-size: var(--font-size-ml);
 }
 
-
 section>ul:first-of-type {
 	justify-content: center;
 	margin-top: 2em;
@@ -535,6 +561,7 @@ section>ul:first-of-type {
 /******************/
 /* FILTER BUTTONS */
 /******************/
+
 
 button {
 	color: var(--color-text);
@@ -569,6 +596,7 @@ button:focus-visible {
 	border-radius: 0;
 }
 
+
 /**************/
 /* EVENT LIST */
 /**************/
@@ -586,10 +614,12 @@ section ul:nth-of-type(2) li,
 section ul:nth-of-type(3) li,
 section ul:nth-of-type(4) li {
 
+	width: 95%;
+
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	width: 95%;
 	padding: 0.5em;
+
 	border: 1px;
 	border-color: var(--color-background);
 	border-style: solid;
@@ -601,11 +631,12 @@ section ul:nth-of-type(4) li:hover {
 
 	border-color: #FFFFFF;
 	background-color: var(--color-background);
+
 	animation: lijstblok 0.4s 0.1s both;
 }
 
-/* Bron: Animista 
-https://animista.net/play/basic/shadow-pop*/
+/* Animista shadow pop animatie
+Bron: https://animista.net/play/basic/shadow-pop*/
 
 @keyframes lijstblok {
 
@@ -640,6 +671,7 @@ https://animista.net/play/basic/shadow-pop*/
 section ul:nth-of-type(2) li:hover p,
 section ul:nth-of-type(3) li:hover p,
 section ul:nth-of-type(4) li:hover p {
+
 	color: #FFFFFF;
 }
 
@@ -681,7 +713,7 @@ section ul:nth-of-type(4) a b {
 section ul:nth-of-type(2) a div,
 section ul:nth-of-type(3) a div,
 section ul:nth-of-type(4) a div {
-	
+
 	display: flex;
 	flex-direction: row;
 }
@@ -726,9 +758,9 @@ section ul:nth-of-type(4) a p {
 		display: block;
 		flex-wrap: nowrap;
 		max-width: 100%;
+
 		margin-top: 0;
 		margin-bottom: 0;
-
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -794,10 +826,13 @@ section ul:nth-of-type(4) a p {
 	h1 {
 		font-size: var(--font-size-m);
 		color: var(--color-text);
+		text-shadow: var(--text-shadow);
+
 		position: absolute;
 		bottom: 1.6em;
 		margin-left: 0.6em;
-		text-shadow: var(--text-shadow);
+
+		animation: none;
 	}
 
 	h2 {
