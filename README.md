@@ -175,17 +175,19 @@ Ik heb nog moeite om de 2e pagina te stylen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/paradiso_fed_index.jpg" width="375px" alt="uitomst startpagina">
+  <img src="readme-images/paradiso_fed_artiest.jpg" width="375px" alt="uitomst artiestenpagina">
+  <img src="readme-images/pardiso_fed_menu.jpg" width="375px" alt="uitomst javascript menu">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het bouwen van de website ging me makkelijker af dan ik had verwacht.
+   Tijdens dit proces heb ik enorm veel nieuwe dingen geleerd. Zo heb ik onder andere geleerd hoe ik effectief met flex grow en shrink kan werken. Daarnaast heb ik ervaring opgedaan met het implementeren van een dark mode, het maken van een image slider, en het werkend krijgen van een hamburgermenu met JavaScript. Ook heb ik gecompliceerde animaties toegevoegd en veel gewerkt aan de positionering van elementen.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ Het positioneren van de tekst in mijn event list vond ik lastig en ik had veel hulp nodig om het goed te krijgen. Ook heb ik veel tijd besteed aan het JavaScript hamburgermenu, omdat de code van het voorbeeld erg afweek van de code die ik al had. Uiteindelijk is alles wat ik wilde doen gelukt.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -203,8 +205,13 @@ Ik heb nog moeite om de 2e pagina te stylen.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. [bron 1](https://codepen.io/tristram/pen/poZYjLO)
-  2. bron 2
-  3. ...
+  1. [Hamburger menu icoon](https://icons8.com/icon/8113/menu) 
+  2. [Vergrootglas icoon](https://icons8.com/icon/7695/search)
+  3. [Kruis icoon](https://icons8.com/icon/6483/multiply) 
+  4. [FED 24/25 - JS 3-stap - Oefening 2 - responsive 2-buttons hamburger](https://codepen.io/shooft/pen/VwJXNEg?editors=1100)
+  5. [Animista shadow pop animatie](https://animista.net/play/basic/shadow-pop)
+  6. [bewegend streepje - Buttons, links en co fancy](https://codepen.io/shooft/pen/BagVYyB)
+
+
 
 </details>
