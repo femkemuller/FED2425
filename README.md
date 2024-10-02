@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
   #### Screenshot(s) van de eerste pagina (small screen): 
   Paradiso homepagina 
-  <img src="readme-images/Paradiso_Homepage.jpg" width="375px" alt="Homepagina van Paradiso">
+  <img src="readme-images/paradiso_homepage.jpg" width="375px" alt="Homepagina van Paradiso">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Paradiso artiest pagina 
-  <img src="readme-images/Paradiso_Artistpage.png" width="375px" alt="Pagina over Artiest en Concert van Paradiso">
+  <img src="readme-images/paradiso_artistpage.png" width="375px" alt="Pagina over Artiest en Concert van Paradiso">
  
 </details>
 
@@ -57,12 +57,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  . veel afbeeldingen hadden geen naam.
-  . veel linkjes werden opgenoemt als 'banger banger'.
-  . er word vertelt welke kleur de tekst en het logo is.
-  . Vertelt dat er een bericht binnen komt.
-  . leest de alinea's niet, alleen de headers.
-  . Laat weten wanneer de pagina klaar is met laden.
+  - Veel afbeeldingen hadden geen naam.
+  - Veel linkjes werden opgenoemt als 'banger banger'.
+  - Er word vertelt welke kleur de tekst en het logo is.
+  - Vertelt dat er een bericht binnen komt.
+  - Leest de alinea's niet, alleen de headers.
+  - Laat weten wanneer de pagina klaar is met laden.
 </details>
 
 
@@ -73,13 +73,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/Breakdown_Schets_Paradiso.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_schets_paradiso.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/paradiso_menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -93,26 +90,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Alle content in de html zetten de basis opzetten van de css ging prima.
+  Het was ff inkomen maar tot dit punt was niks nog lastig.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Code is netjes
+  - Meer spaties gebruiken in code
+  - Cool dat dark mode werkt
 
 </details>
 
@@ -126,26 +112,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Ik heb de image slider laten werken en ik met position de tekst erop gekregen.
+Ik heb nog moeite om de 2e pagina te stylen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Uitleg van de image slider gekregen
+  - Class gebruiken voor het stijlen van pagina 2
 
 </details>
 
@@ -160,6 +134,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- Focus state is ng niet gestyled
+- Heading staan nog niet op de juiste volgorde
+- Nog geen skip link
+- Tekst op images hebben nog niet genoeg contrast
 
 </details>
 
@@ -173,26 +151,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  De layout is grotendeels uitgewerkt van beide pagina's en ik heb youtube en spotify toe kunnen voegen aan de artiestenpagina.
+  Ik heb nog problemen met de event list en alle content daarin op de juiste plaats te krijgen.
+  Ook staat de header nav nog niet helemaal juist.
+  Moet nog animaties toevoegen en javascript schrijven.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Event list met flex grow en flex shrink
+  - Header nav met flex grow en flex shrink
+  - Hover toevoegen bij event list
 
 </details>
 
